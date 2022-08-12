@@ -4,9 +4,14 @@ const TODO_KEY = 'todolist';
 
 const $todoForm  = document.querySelector('#todo-form');
 const $todoInput = $todoForm.querySelector('input');
-const $todoList  = document.querySelector('#todo-list');
+const $todoList  = document.querySelector('#todo-list ul');
 
 let todos = [];
+
+const CountTodo = () => {
+  const $listCount = document.querySelector('#list-count');
+  $listCount.innerHTML = todos.length;
+}
 
 const deleteTodo = (event) => {
   const li = event.target.parentNode;
@@ -18,7 +23,6 @@ const deleteTodo = (event) => {
 }
 
 const addTodo = (text, id) => {
-
   const $todo = document.createElement('li');
   $todo.innerHTML = text;
   $todo.id = id;
@@ -35,11 +39,13 @@ const addTodo = (text, id) => {
 
 const setTodoStorage = () => {
   localStorage.setItem(TODO_KEY, JSON.stringify(todos));
+  CountTodo();
 }
 
 const getTodoStorage = () => {
   const todolist = localStorage.getItem(TODO_KEY);
   if(todolist) todos = JSON.parse(todolist);
+  CountTodo();
 }
 
 const todoSubmit = (event) => {

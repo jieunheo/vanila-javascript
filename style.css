@@ -1,4 +1,4 @@
-html, body, p, div, span, ul, li, a, h1, h2, img {
+html, body, p, div, span, ul, li, a, h1, h2, h3, img {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -34,6 +34,11 @@ h2 {
   font-size: 4.6rem;
 }
 
+h3 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
 .hidden {
   display: none;
 }
@@ -64,6 +69,8 @@ form button {
   font-weight: 700;
   cursor: pointer;
   transition: all .2s;
+
+  flex-grow: 1;
 }
 
 form button:hover {
@@ -80,17 +87,18 @@ form button:hover {
   width: 80%;
   max-width: 600px;
   height: 20vh;
-  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 30px;
   border-radius: 16px 16px 0 0;
 }
 
-#todo-list::-webkit-scrollbar {
-  display: none;
+#todo-list ul {
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 30px;
 }
 
-#todo-list::-webkit-scrollbar {
+#todo-list ul::-webkit-scrollbar {
   display: none;
 }
 
