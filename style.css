@@ -1,4 +1,4 @@
-html, body, p, div, span, ul, li, a, h1, h2 {
+html, body, p, div, span, ul, li, a, h1, h2, img {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -6,6 +6,7 @@ html, body, p, div, span, ul, li, a, h1, h2 {
 
 body {
   height: 100vh;
+  min-height: 650px;
   background-repeat : no-repeat;
   background-size : cover;
   background-position: center;
@@ -41,7 +42,7 @@ h2 {
 
 /* form */
 form {
-  padding: 20px;
+  padding: 8px;
 
   display: flex;
 }
@@ -76,12 +77,20 @@ form button:hover {
   transform: translateX(-50%);
 
   width: 80%;
-  height: 300px;
+  max-width: 600px;
+  height: 20vh;
   overflow-y: scroll;
-  scroll-behavior: smooth;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 30px;
   border-radius: 16px 16px 0 0;
+}
+
+#todo-list::-webkit-scrollbar: {
+  display: none;
+}
+
+#todo-list::-webkit-scrollbar {
+  display: none;
 }
 
 #todo-list li {
@@ -96,4 +105,29 @@ form button:hover {
 
 #todo-list button {
   float: right;
+}
+
+/* weather */
+#weather-wrap {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-radius: 16px;
+  padding: 16px;
+
+  position: fixed;
+  top: 16px;
+  right: 16px;
+
+}
+
+#city, #temp {
+  font-size: 1.2rem;
+}
+
+#weather {
+  font-weight: 700;
+}
+
+#icon {
+  width: 100px;
 }
