@@ -86,7 +86,7 @@ form button:hover {
   border-radius: 16px 16px 0 0;
 }
 
-#todo-list::-webkit-scrollbar: {
+#todo-list::-webkit-scrollbar {
   display: none;
 }
 
