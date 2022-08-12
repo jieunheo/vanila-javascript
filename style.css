@@ -108,9 +108,12 @@ form button:hover {
   float: right;
 
   border: none;
-  padding: 15px 20px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
   background-color: rgb(80, 103, 213);
   cursor: pointer;
+  transform: translateY(-8px);
   transition: all .2s;
 }
 
