@@ -29,6 +29,10 @@ h2 {
   font-size: 4.6rem;
 }
 
+.hidden {
+  display: none;
+}
+
 
 
 /* login */
