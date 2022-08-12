@@ -1,0 +1,61 @@
+html, body, p, div, span, ul, li, a, h1, h2 {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+
+
+/* login */
+#login-form {
+  padding: 20px;
+
+  display: flex;
+}
+
+#login-form input,
+#login-form button {
+  border: none;
+  padding: 15px 20px;
+}
+
+#login-form input {
+  border-radius: 16px 0 0 16px;
+}
+
+#login-form button {
+  border-radius: 0 16px 16px 0;
+  background-color: rgb(80, 103, 213);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: rgb(47, 68, 173);
+}
