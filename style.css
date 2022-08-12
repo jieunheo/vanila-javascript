@@ -11,7 +11,11 @@ body {
   background-position: center;
 }
 
-.container {
+ul, li {
+  list-style: none;
+}
+
+.center {
   text-align: center;
   color: #fff;
   position: absolute;
@@ -35,24 +39,24 @@ h2 {
 
 
 
-/* login */
-#login-form {
+/* form */
+form {
   padding: 20px;
 
   display: flex;
 }
 
-#login-form input,
-#login-form button {
+form input,
+form button {
   border: none;
   padding: 15px 20px;
 }
 
-#login-form input {
+form input {
   border-radius: 16px 0 0 16px;
 }
 
-#login-form button {
+form button {
   border-radius: 0 16px 16px 0;
   background-color: rgb(80, 103, 213);
   color: #fff;
@@ -60,6 +64,36 @@ h2 {
   cursor: pointer;
 }
 
-#login-form button:hover {
+form button:hover {
   background-color: rgb(47, 68, 173);
+}
+
+/* todo list */
+#todo-list {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  width: 80%;
+  height: 300px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 16px 16px 0 0;
+}
+
+#todo-list li {
+  background-color: #fff;
+  border-radius: 60px;
+  padding: 30px;
+}
+
+#todo-list li + li {
+  margin-top: 20px;
+}
+
+#todo-list button {
+  float: right;
 }

@@ -9,18 +9,28 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="hidden">JEHEO'S PAGE</h1>
-
-    <h2 id="clock">00:00:00</h2>
-    <div class="login-wrap">
-      <form id="login-form">
-        <input type="text" placeholder="이름을 입력하세요" required maxlength="8">
-        <button type="submit">Login</button>
-      </form>
+    <div class="center">
+      <h1 class="hidden">JEHEO'S PAGE</h1>
+      
+      <h2 id="clock">00:00:00</h2>
+      <div class="login-wrap">
+        <form id="login-form">
+          <input type="text" placeholder="이름을 입력하세요" required maxlength="8">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <div class="todo-wrap">
+        <form id="todo-form">
+          <input type="text" placeholder="할 일을 입력하세요" required>
+          <button type="submit">Add</button>
+        </form>
+      </div>
     </div>
+    <ul id="todo-list"></ul>
   </div>
   <script src="./background.js"></script>
   <script src="./clock.js"></script>
   <script src="./login.js"></script>
+  <script src="./todo.js"></script>
 </body>
 </html>
