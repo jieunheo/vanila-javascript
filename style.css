@@ -63,6 +63,7 @@ form button {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+  transition: all .2s;
 }
 
 form button:hover {
@@ -105,7 +106,18 @@ form button:hover {
 
 #todo-list button {
   float: right;
+
+  border: none;
+  padding: 15px 20px;
+  background-color: rgb(80, 103, 213);
+  cursor: pointer;
+  transition: all .2s;
 }
+
+#todo-list button:hover {
+  background-color: rgb(47, 68, 173);
+}
+
 
 /* weather */
 #weather-wrap {
